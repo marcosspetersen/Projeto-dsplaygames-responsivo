@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --color-green: #38af90;
+  --color-white: #ffffff;
+  --color-red: #dd7e92;
+  --color-dark-gray: #797979;
+  --color-light-gray: #c4c4c4;
+  --bg-color-gray: #f0f0f0;
+  --bg-color-black: #383838;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--color-green);
+  height: 90px;
+  box-shadow: 0px 5px 5px var(--color-dark-gray);
+  display: flex;
+  align-items: center;
+}
+
+/*classes and ids*/
+
+.container {
+  width: 100%;
+  max-width: 990px;
+  margin: 0 auto;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 10px;
+}
+
+.nav-container h1 {
+  font-size: 1.5rem;
+  color: var(--color-white);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu-itens {
+  justify-content: center;
+}
+
+.nav-menu-itens li {
+  font-size: 4px;
+  list-style-type: none;
+}
+
+.nav-itens a {
+  list-style-type: none;
+  color: var(--color-green);
+  text-decoration: none;
+}
+
+.nav-menu img {
+  width: 62px;
+}
+
+#news-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news-title {
+  font-size: 24px;
+  color: var(--color-dark-gray);
+  padding-top: 40px;
+}
+
+.news-container {
+  background-color: var(--bg-color-gray);
+  border-radius: 8px;
+  margin: 8px 10px 20px 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 3px 10px var(--color-dark-gray);
+}
+
+.news-container h2 {
+  font-size: 16px;
+  color: var(--color-green);
+  padding-top: 4px;
+}
+
+.news-container h4 {
+  font-size: 1rem;
+  color: var(--color-dark-gray);
+  padding: 3px 0;
+  border-bottom: 1px solid var(--color-green);
+}
+
+.news-container p {
+  font-size: 10px;
+  color: var(--color-dark-gray);
+  padding-top: 12px;
+  line-height: 15px;
+}
+
+.news-data {
+  font-size: 10px;
+  color: var(--color-green);
+  padding-top: 1px;
+}
+
+.news-container a {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  padding-top: 12px;
+}
+
+.news-container a,
+.news-container a:hover {
+  color: var(--color-red);
+  text-decoration: none;
+}
+
+.button-red {
+  width: 244px;
+  height: 67px;
+  background-color: var(--color-red);
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+#news-section button {
+  margin-top: 8px;
+  margin-bottom: 40px;
+}
+
+.button:active {
+  border: 2px solid var(--color-dark-gray);
+  box-shadow: 0px 3px 10px var(--color-dark-gray);
+}
+
+#games-section {
+  background-color: var(--bg-color-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 40px 0;
+}
+
+.game-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.game-title {
+  font-size: 24px;
+  color: var(--color-green);
+}
+
+.games-card {
+  width: 300px;
+  background-color: var(--color-white);
+  border-radius: 8px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  margin: 27px 10px 0 10px;
+}
+
+.games-card img {
+  width: 300px;
+  border-radius: 8px 8px 0 0;
+}
+
+.games-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.games-info h2 {
+  font-size: 18px;
+  color: var(--color-dark-gray);
+  padding-top: 26px;
+}
+
+.games-info p {
+  font-size: 12px;
+  color: var(--color-dark-gray);
+}
+
+.games-info span {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-green);
+}
+
+.games-info h1 {
+  font-size: 36px;
+  color: var(--color-green);
+  padding: 13px 0 15px 0;
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 10px;
+}
+
+.signup-container h1 {
+  font-size: 24px;
+  color: var(--color-dark-gray);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.signup-box {
+  background-color: var(--bg-color-gray);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 790px;
+  margin: 0 auto;
+  padding: 42px 10px 0px 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.signup-box-form {
+  width: 100%;
+  max-width: 642px;
+  margin: 0px auto;
+}
+
+.signup-text-box {
+  display: flex;
+  flex-direction: column;
+}
+
+#crtl-name::placeholder,
+#crtl-email::placeholder {
+  color: var(--color-light-gray);
+}
+
+.signup-text-box input {
+  height: 50px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-dark-gray);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 10px 0;
+  font-size: 16px;
+  color: var(--color-dark-gray);
+  padding: 13px 22px;
+}
+
+.signup-box-platform {
+  font-size: 16px;
+  color: var(--color-dark-gray);
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-box-radio {
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+}
+
+.signup-box-radio label {
+  padding-left: 7px;
+}
+
+.signup-box-newsletter {
+  font-size: 16px;
+  color: var(--color-dark-gray);
+  padding-top: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.signup-box-newsletter label {
+  padding-left: 9px;
+}
+
+.signup-box-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 37px 0 23px 0;
+}
+
+.signup-box-buttons div {
+  margin: 10px 26px;
+}
+
+.button-white {
+  width: 244px;
+  height: 67px;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-red);
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-red);
+}
+
+footer {
+  background-color: var(--bg-color-black);
+}
+
+.footer-container {
+  height: 302px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-content-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-content-social a {
+  font-size: 14px;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.footer-content-info {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.footer-content-terms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-content-terms a {
+  font-size: 14px;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+/* RESPONSIBILITY */
+
+@media (min-width: 768px) {
+  * {
+    font-size: 14px;
+  }
+
+  .nav-menu-itens {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-menu-itens li {
+    font-size: 14px;
+    padding-right: 29px;
+  }
+
+  .nav-itens a {
+    color: var(--color-white);
+  }
+
+  .news-title {
+    font-size: 32px;
+    padding-bottom: 32px;
+  }
+
+  .news-container {
+    padding: 12px 40px 15px 40px;
+  }
+
+  .news-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .news-container p {
+    padding-top: 16px;
+  }
+
+  .news-container a {
+    padding-top: 7px;
+  }
+
+  #news-section button {
+    margin-top: 20px;
+    margin-bottom: 56px;
+  }
+
+  #games-section {
+    padding: 40px 0 70px 0;
+  }
+
+  .game-title {
+    font-size: 32px;
+    padding-bottom: 46px;
+  }
+
+  .signup-container {
+    margin-bottom: 100px;
+  }
+
+  .signup-container h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .signup-box-platform {
+    margin-top: 11px;
+  }
+
+  .signup-box-newsletter {
+    padding-top: 30px;
+  }
+
+  .signup-box-buttons {
+    margin: 28px 0 42px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  * {
+    font-size: 16px;
+  }
+
+  .nav-container {
+    padding: 0;
+  }
+
+  .nav-menu-itens {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-menu-itens li {
+    font-size: 14px;
+    padding-right: 29px;
+  }
+
+  .nav-itens a {
+    color: var(--color-white);
+  }
+
+  .news-title {
+    font-size: 36px;
+    padding-bottom: 32px;
+  }
+
+  .news-container {
+    padding: 12px 40px 15px 40px;
+  }
+
+  .news-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .news-container p {
+    padding-top: 16px;
+  }
+
+  .news-container a {
+    padding-top: 7px;
+  }
+
+  #news-section button {
+    margin-top: 20px;
+    margin-bottom: 56px;
+  }
+
+  #games-section {
+    padding: 40px 0 70px 0;
+  }
+
+  .game-title {
+    font-size: 36px;
+    padding-bottom: 46px;
+  }
+
+  .signup-container {
+    margin-bottom: 61px;
+  }
+
+  .signup-container h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .signup-box-platform {
+    margin-top: 11px;
+  }
+
+  .signup-box-newsletter {
+    padding-top: 30px;
+  }
+
+  .signup-box-buttons {
+    margin: 28px 0 42px 0;
+  }
+
+  .footer-container {
+    height: 190px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 7.5px 0 7.5px;
+  }
+}
